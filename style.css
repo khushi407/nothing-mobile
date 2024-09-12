@@ -59,10 +59,9 @@
 .login li{
     list-style: none;
 }
-
-/* #none{
+.login li:last-child{
     display: none;
-} */
+}
 
 .hero-section{
     height: 90%;
@@ -242,12 +241,13 @@ background-color: rgb(27, 27, 144);
     height: auto;
     width: 100%;
     display: flex;
+    /* border: 2px solid black; */
 
     /* background-color: rgb(241, 239, 239); */
 }
 
 .forth-container .img{
-    height: auto;
+    height: 500px;
     width: 65%;
     /* background-color: aqua; */
     display: flex;
@@ -255,15 +255,15 @@ background-color: rgb(27, 27, 144);
     
 }
 .forth-container img{
-    height: 900px;
+    height: 500px;
     width: 100%;
-    display: flex;
+    object-fit: cover;
 }
 
 .forth-container .text{
-    height: auto;
+    height: 500px;
     width: 35%;
-    background-color: rgb(241, 239, 239);;
+    background-color: rgb(241, 239, 239);
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -271,11 +271,11 @@ background-color: rgb(27, 27, 144);
     padding-inline: 20px;
 }
 .forth-container .text h1{
-    font-size: 54px;
+    font-size: 50px;
 }
 
 .forth-container .text p{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.8;
     margin-top: 25px;
 }
@@ -286,7 +286,7 @@ background-color: rgb(27, 27, 144);
     color: white;
     border: none;
     border-radius: 23px;
-    margin-block:25px;
+    margin-block:9px;
     margin-inline: 15px;
     font-size: 20px;
 }
@@ -312,13 +312,14 @@ background-color: rgb(27, 27, 144);
     
 }
 .fifth-container img{
-    height: 900px;
+    height: 650px;
     width: 100%;
     display: flex;
+    object-fit: cover;
 }
 
 .fifth-container .text{
-    height: auto;
+    height: 650px;
     width: 35%;
     background-color: rgb(241, 239, 239);;
     display: flex;
@@ -359,7 +360,7 @@ background-color: rgb(27, 27, 144);
 }
 
 .sixth-container{
-    height: auto;
+    height: 600px;
     width: 100%;
     display: flex;
 
@@ -378,6 +379,7 @@ background-color: rgb(27, 27, 144);
     height: 700px;
     width: 100%;
     display: flex;
+    object-fit: cover;
 }
 
 .sixth-container .text{
@@ -432,9 +434,10 @@ background-color: rgb(27, 27, 144);
     
 }
 .seven-container img{
-    height: 800px;
+    height: 650px;
     width: 100%;
     display: flex;
+    object-fit: cover;
 }
 
 .seven-container .text{
@@ -453,7 +456,7 @@ background-color: rgb(27, 27, 144);
 
 .seven-container .text p{
     font-size: 16px;
-line-height: normal;
+    line-height: normal;
 }
 .seven-container .text button{
     height: 40px;
@@ -492,6 +495,7 @@ background-color: rgb(27, 27, 144);
     height: 680px;
     width: 100%;
     display: flex;
+    object-fit: cover;
 }
 
 .eight-container .text{
@@ -550,6 +554,7 @@ background-color: rgb(27, 27, 144);
     height: 750px;
     width: 100%;
     display: flex;
+    object-fit: cover;
 }
 
 .nine-container .text{
@@ -720,7 +725,7 @@ background-color: rgb(27, 27, 144);
 @media (max-width:768px) {
     /* for mobile */
     .logo{
-        width: 50%;
+        width: 20%;
         height: auto;
         justify-content: center;
     }
@@ -730,11 +735,18 @@ background-color: rgb(27, 27, 144);
     .login{
         height: auto;
         width: 50%;
+        justify-content: space-evenly;
     
+    }
+    .login li:last-child{
+        display: block;
     }
     
     .logo img{
-        margin-left: 55px;
+        width: 200px;
+        height: 70px;
+        padding-left: 50px;
+        
     }
 
     .hero-section{
